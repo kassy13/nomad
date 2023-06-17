@@ -1,0 +1,780 @@
+@import url("https://fonts.googleapis.com/css2?family=Amita:wght@700&family=Cormorant:wght@300&family=Dosis:wght@200&family=Instrument+Serif&family=Italianno&family=Noto+Sans+Zanabazar+Square&family=Poppins:wght@200&family=Seaweed+Script&family=Space+Mono:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Amita:wght@700&family=Cormorant:wght@300&family=Dosis:wght@200&family=Instrument+Serif&family=Italianno&family=Montserrat:wght@200&family=Noto+Sans+Zanabazar+Square&family=Poppins:wght@200&family=Seaweed+Script&family=Space+Mono:wght@400;700&display=swap");
+body {
+  font-family: "poppins", sans-serif;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.navi {
+  background-color: rgb(249, 249, 249);
+  -webkit-box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+          box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 9999;
+  margin-left: 0.05rem;
+  font-family: "poppins", sans-serif;
+  font-weight: 600;
+}
+.navi .container-fluid {
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+.navi .container-fluid button.navbar-toggler {
+  background-color: whitesmoke !important;
+}
+.navi .container-fluid button {
+  background-color: rgb(11, 41, 97) !important;
+}
+@media screen and (max-width: 767px) {
+  .navi .container-fluid {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  .navi .container-fluid {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+.navi .navbar-brand {
+  height: 50px;
+  width: 130px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  padding-left: 5rem;
+  padding-top: 0.7rem;
+}
+.navi .navbar-brand a {
+  position: relative;
+  text-align: center;
+  margin-top: -1rem;
+}
+.navi .navbar-brand img {
+  margin-left: -4rem;
+  position: absolute;
+  height: 80%;
+  width: 30%;
+  margin-top: -0.5rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.navi .space {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+@media screen and (max-width: 767px) {
+  .navi .space {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    z-index: 999;
+  }
+}
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  .navi .space {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+}
+.navi .space .links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 1rem;
+  width: 120vh;
+  padding-left: 5rem;
+}
+@media screen and (max-width: 767px) {
+  .navi .space .links {
+    padding-left: 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    z-index: 999;
+    gap: 0.5rem;
+  }
+}
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  .navi .space .links {
+    padding-left: 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    z-index: 999;
+    gap: 0.5rem;
+  }
+}
+.navi .space .signs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 0.3rem;
+}
+.navi .space .signs button {
+  background-color: rgb(11, 41, 97) !important;
+}
+.navi .space .signs button:hover {
+  background-color: rgb(0, 25, 72) !important;
+}
+.navi .space .signs div.supp a {
+  text-decoration: none;
+}
+.navi .space .signs div.supp a i {
+  font-size: 30px;
+  color: rgb(11, 41, 97);
+  -webkit-transition: 0.03ms;
+  transition: 0.03ms;
+}
+@media screen and (max-width: 767px) {
+  .navi .space .signs {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    z-index: 999;
+    gap: 0;
+  }
+}
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  .navi .space .signs {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    z-index: 999;
+    gap: 0;
+  }
+}
+.navi .space a:hover {
+  color: rgb(11, 41, 97);
+}
+.navi div.links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.navi div.links a {
+  color: black;
+}
+.navi div.dropdown {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.navi div.dropdown a {
+  color: black;
+}
+.navi div.dropdown a:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+.navi div.dropdown .b:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+.navi div.dropdown .a:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+.navi div.dropdown .modal-body {
+  width: 100% !important;
+  background-color: whitesmoke;
+}
+.navi div.dropdown .modal-body .cash {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 3rem;
+}
+.navi div.dropdown .modal-body .allcur {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.navi div.dropdown .modal-body p.hov:hover {
+  color: rgb(11, 41, 97);
+}
+.navi div.dropdown .abut {
+  width: 30px !important;
+}
+.navi div.dropdown .dropdown-menu {
+  min-width: 100% !important;
+  position: absolute;
+  z-index: 999;
+}
+.navi div.dropdown .dropdown-menu li a {
+  color: #000;
+}
+.navi div.dropdown .dropdown-menu li a:hover {
+  background-color: rgb(11, 41, 97);
+  color: white;
+}
+.navi div.dropdown a {
+  text-decoration: none;
+  color: black;
+}
+.navi div.dropdown a img {
+  width: 30px;
+  height: 30px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+section.burj {
+  width: 100%;
+  height: 70vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 2rem;
+  padding-top: 1rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+@media screen and (max-width: 767px) {
+  section.burj {
+    height: auto;
+  }
+}
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  section.burj {
+    height: 50vh;
+  }
+}
+section.burj div.imgone {
+  width: 100%;
+  height: 66vh;
+  position: relative;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@media screen and (max-width: 767px) {
+  section.burj div.imgone {
+    height: 35vh;
+  }
+}
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  section.burj div.imgone {
+    height: 46.5vh;
+  }
+}
+section.burj div.imgone img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+section.burj div.imgtwo {
+  width: 50%;
+  height: 70vh;
+  padding-bottom: 2rem;
+  position: relative;
+  -o-object-fit: cover;
+     object-fit: cover;
+  gap: 2rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr 2rem 1fr;
+  grid-template-rows: repeat(2, 1fr);
+}
+@media screen and (max-width: 767px) {
+  section.burj div.imgtwo {
+    height: 30vh;
+  }
+}
+section.burj div.imgtwo div.one {
+  width: 100%;
+  position: relative;
+  height: 30vh;
+}
+@media screen and (max-width: 767px) {
+  section.burj div.imgtwo div.one {
+    height: 15vh;
+  }
+}
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  section.burj div.imgtwo div.one {
+    height: 21.5vh;
+  }
+}
+section.burj div.imgtwo div.one img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+section.burj div.imgtwo div.two {
+  width: 100%;
+  position: relative;
+  height: 30vh;
+  display: -ms-grid;
+  display: grid;
+  gap: 1rem;
+  right: 0;
+}
+@media screen and (max-width: 767px) {
+  section.burj div.imgtwo div.two {
+    height: 15vh;
+  }
+}
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  section.burj div.imgtwo div.two {
+    height: 21.5vh;
+    margin-top: -7rem;
+  }
+}
+section.burj div.imgtwo div.two img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+section.kalifa {
+  padding-left: 3rem;
+  padding-right: 3rem;
+  padding-top: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding-bottom: 3rem;
+  gap: 3rem;
+  position: relative;
+}
+@media screen and (max-width: 767px) {
+  section.kalifa {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+section.kalifa main {
+  width: 50%;
+  height: auto;
+  padding-bottom: 15rem;
+}
+@media screen and (max-width: 767px) {
+  section.kalifa main {
+    width: 100%;
+  }
+}
+section.kalifa main a {
+  color: rgb(11, 41, 97);
+}
+section.kalifa main h3 {
+  font-weight: 600;
+}
+section.kalifa main p.beest {
+  width: 30vh;
+  height: 5vh;
+  background-color: rgb(11, 41, 97);
+  color: white;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+section.kalifa main div.rew {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 1rem;
+}
+section.kalifa main div.rew i {
+  color: rgb(240, 201, 9);
+}
+section.kalifa main div.rew p span {
+  font-weight: 600;
+}
+section.kalifa main div.free h6 {
+  font-weight: 600;
+  padding-top: 1rem;
+}
+section.kalifa main div.free i {
+  color: rgb(11, 41, 97);
+  padding-right: 0.5rem;
+}
+section.kalifa main div.visit h6 {
+  font-weight: 600;
+}
+section.kalifa main div.visit div.great {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 0.5rem;
+}
+section.kalifa main div.what {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+section.kalifa main div.what div.wifi h6 {
+  font-weight: 600;
+}
+section.kalifa main div.what div.wifi div.include {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 0.5rem;
+}
+section.kalifa main div.what div.exclude h6 {
+  font-weight: 600;
+}
+section.kalifa main div.restric h6 {
+  font-weight: 600;
+}
+section.kalifa main div.addi h6 {
+  font-weight: 600;
+}
+section.kalifa main div.loca {
+  width: 100%;
+  height: 30vh;
+  position: relative;
+}
+section.kalifa main div.loca img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+section.kalifa main div.loca h6 {
+  font-weight: 600;
+}
+section.kalifa main div.loca h6.move {
+  padding-top: 12rem;
+}
+section.kalifa aside {
+  width: 50%;
+  padding-left: 1rem;
+  position: sticky;
+  top: 10%;
+  right: 0;
+}
+@media screen and (max-width: 767px) {
+  section.kalifa aside {
+    margin-top: -3rem;
+    width: 100%;
+  }
+}
+section.kalifa aside h6 {
+  font-weight: 600;
+  font-size: 25px;
+}
+section.kalifa aside a {
+  text-decoration: none;
+  color: rgb(11, 41, 97);
+}
+section.kalifa aside div.dates {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+}
+section.kalifa aside div.dates div.fri {
+  width: 19vh;
+  height: 20vh;
+  border: 0.1px solid gainsboro;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+@media screen and (max-width: 767px) {
+  section.kalifa aside div.dates div.fri {
+    height: 15vh;
+  }
+}
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  section.kalifa aside div.dates div.fri {
+    height: 12vh;
+  }
+}
+section.kalifa aside div.dates div.fri h4 {
+  font-size: 25px;
+  font-weight: 600;
+}
+section.kalifa aside div.dates div.fri a.ee {
+  margin-top: 4.5rem;
+  padding-left: 1.5rem;
+  padding-bottom: 2rem;
+}
+section.kalifa aside div.dates div.spesi p.day {
+  width: 12vh;
+  height: 4vh;
+  background-color: rgb(11, 41, 97);
+  color: white;
+  border-radius: 3px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  top: -1rem;
+  right: 1rem;
+}
+@media screen and (max-width: 767px) {
+  section.kalifa aside div.dates div.spesi p.day {
+    width: 5vh;
+    height: 3vh;
+    font-size: 10px;
+    margin-left: 0.5rem;
+  }
+}
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  section.kalifa aside div.dates div.spesi p.day {
+    width: 6vh;
+    height: 3vh;
+  }
+}
+section.kalifa aside div.genadd div.many {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 3rem;
+}
+section.kalifa aside div.genadd div.many div.ticket p.bol {
+  font-weight: bold;
+}
+section.kalifa aside div.genadd div.many div.incre select {
+  width: 30vh;
+}
+@media screen and (max-width: 767px) {
+  section.kalifa aside div.genadd div.many div.incre select {
+    width: 19vh;
+  }
+}
+@media screen and (max-width: 767px) {
+  section.kalifa aside div.genadd div.many div.incre select option {
+    font-size: 8px !important;
+  }
+}
+section.kalifa aside div.genadd div.many div.incre p .span {
+  color: rgb(11, 41, 97);
+}
+section.kalifa aside div.genadd a.kal {
+  position: relative;
+  margin-left: 75% !important;
+  width: 30vh !important;
+  height: 5vh;
+  padding: 0.5rem !important;
+  background-color: rgb(11, 41, 97) !important;
+  border-radius: 9px;
+  color: white !important;
+}
+
+section.foot {
+  padding-left: 3rem;
+  padding-right: 3rem;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+  width: 100%;
+  height: auto;
+  background-color: rgb(11, 41, 97);
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+@media screen and (max-width: 767px) {
+  section.foot {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+section.foot a {
+  text-decoration: none;
+  font-size: 14px;
+  color: white;
+}
+section.foot h3 {
+  font-weight: 500;
+}
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  section.foot h3 {
+    font-size: 17px;
+    font-weight: 600;
+  }
+}
+section.foot div.nomad {
+  gap: 1rem;
+}
+section.foot div.nomad h5 {
+  padding-bottom: 1rem;
+  font-size: 14px;
+}
+section.foot div.email i {
+  font-size: 20px;
+  color: white;
+  border: 0.1px solid white;
+  padding: 0.1rem;
+}
+
+.bread {
+  padding-left: 3rem;
+  padding-right: 3rem;
+  padding-top: 1rem;
+}
+.bread a {
+  color: rgb(11, 41, 97);
+}

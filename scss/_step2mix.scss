@@ -1,0 +1,487 @@
+@mixin navi {
+  background-color: rgb(249, 249, 249);
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+  position: sticky;
+  top: 0;
+  width: 100%;
+  // height: 50vh;
+  z-index: 9999;
+  // overflow: hidden;
+  margin-left: 0.05rem;
+  // font-family: "Montserrat", sans-serif;
+  font-family: "poppins", sans-serif;
+  font-weight: 600;
+
+  .container-fluid {
+    padding-left: 3rem;
+    padding-right: 3rem;
+
+    button.navbar-toggler {
+      background-color: whitesmoke !important;
+    }
+    button {
+      background-color: $main !important;
+    }
+    // .navbar-toggler-icon {
+    //   background-color: white !important;
+    // }
+
+    @include mediaQuery(767px) {
+      padding-left: 2rem;
+      padding-right: 2rem;
+    }
+    @include mediaQuery(1024px, 768px) {
+      padding-left: 2rem;
+      padding-right: 2rem;
+      // font-size: 35px;
+    }
+  }
+  .navbar-brand {
+    // @include mediaQuery(767px) {
+    //   display: block;
+    // }
+    height: 50px;
+    width: 130px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding-left: 5rem;
+    padding-top: 0.7rem;
+    // color: whitesmoke;
+    // background-color: white;
+
+    a {
+      position: relative;
+      text-align: center;
+
+      //   bottom: 0;
+      //   padding-bottom: 4rem;
+      margin-top: -1rem;
+      //   background-color: aqua !important;
+    }
+
+    img {
+      // height: 30px;
+      // width: 30px;
+      // display: flex;
+      // flex-direction: row;
+      // align-items: center;
+      // justify-content: center;
+      margin-left: -4rem;
+      position: absolute;
+      height: 80%;
+      width: 30%;
+      margin-top: -0.5rem;
+      object-fit: cover;
+    }
+  }
+
+  .space {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    // background-color: whitesmoke;
+    @include mediaQuery(767px) {
+      flex-direction: column;
+      align-items: flex-start;
+      z-index: 999;
+    }
+    @include mediaQuery(1024px, 768px) {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .links {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      gap: 1rem;
+      // background-color: aqua;
+      width: 120vh;
+      padding-left: 5rem;
+
+      @include mediaQuery(767px) {
+        padding-left: 0;
+        flex-direction: column;
+        align-items: flex-start;
+        z-index: 999;
+        gap: 0.5rem;
+      }
+      @include mediaQuery(1024px, 768px) {
+        padding-left: 0;
+        flex-direction: column;
+        align-items: flex-start;
+        z-index: 999;
+        gap: 0.5rem;
+      }
+    }
+    .signs {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      gap: 0.3rem;
+      button {
+        background-color: $main !important;
+        &:hover {
+          background-color: rgb(0, 25, 72) !important;
+        }
+      }
+      div.supp {
+        // background-color: aquamarine;
+
+        a {
+          text-decoration: none;
+
+          i {
+            font-size: 30px;
+            color: $main;
+            transition: 0.03ms;
+          }
+        }
+      }
+      @include mediaQuery(767px) {
+        flex-direction: column;
+        align-items: flex-start;
+        z-index: 999;
+        gap: 0;
+      }
+      @include mediaQuery(1024px, 768px) {
+        flex-direction: column;
+        align-items: flex-start;
+        z-index: 999;
+        gap: 0;
+      }
+    }
+
+    a:hover {
+      color: $main;
+    }
+  }
+  div.links {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    a {
+      color: black;
+      // color: whitesmoke;
+    }
+  }
+  div.dropdown {
+    // i.quest {
+    //       font-size: 30px;
+    // background-color: blue;
+    //     }
+    display: flex;
+    a {
+      color: black;
+      &:hover {
+        transform: scale(1.05);
+      }
+    }
+    .b {
+      &:hover {
+        transform: scale(1.05);
+      }
+    }
+    .a {
+      &:hover {
+        transform: scale(1.05);
+      }
+    }
+    .modal-body {
+      width: 100% !important;
+      background-color: whitesmoke;
+      .cash {
+        display: flex;
+        flex-direction: row;
+        gap: 3rem;
+      }
+      .allcur {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+      }
+      p.hov:hover {
+        color: $main;
+      }
+    }
+
+    .abut {
+      //   background-color: firebrick;
+      width: 30px !important;
+    }
+
+    .dropdown-menu {
+      min-width: 100% !important;
+      //   background-color: aqua;
+      //   .drpdown-item {
+      //     width: 100% !important;
+      //   }
+      position: absolute;
+      z-index: 999;
+      li {
+        a {
+          color: #000;
+          &:hover {
+            background-color: $main;
+            color: white;
+          }
+        }
+      }
+    }
+  }
+  div.dropdown a {
+    text-decoration: none;
+    color: black;
+
+    img {
+      width: 30px;
+      height: 30px;
+      object-fit: cover;
+    }
+  }
+}
+@mixin paye {
+  padding-left: 3rem;
+  padding-right: 3rem;
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  width: 100%;
+  @include mediaQuery(767px) {
+    flex-direction: column;
+  }
+  main {
+    width: 70%;
+    // height: auto;
+    @include mediaQuery(767px) {
+      width: 100%;
+    }
+    h4,
+    h6 {
+      font-weight: 600;
+      padding-bottom: 0.5rem;
+    }
+    div.cardds {
+      width: 100%;
+      // height: 7vh;
+      display: flex;
+      flex-direction: row;
+      gap: 2rem;
+      // padding-top: 1rem;
+      margin-bottom: 1rem;
+      @include mediaQuery(767px) {
+        gap: 0.5rem;
+      }
+      @include mediaQuery(1024px, 768px) {
+        gap: 1rem;
+      }
+      div.palm {
+        width: 20vh;
+        height: 5vh;
+        position: relative;
+      }
+
+      img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+    form {
+      background-color: rgba(213, 213, 213, 0.256);
+      height: 40vh;
+      width: 100%;
+      display: flex !important;
+      flex-direction: column;
+      // padding: 1rem;
+      justify-content: center;
+      padding-bottom: 2rem;
+      padding-left: 1rem;
+      padding-right: 1rem;
+      padding-top: 1rem;
+      @include mediaQuery(767px) {
+        height: auto;
+        width: 100%;
+      }
+      @include mediaQuery(1024px, 768px) {
+        height: auto;
+      }
+      button {
+        background-color: $main !important;
+        color: white;
+      }
+      div.cvcs {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        @include mediaQuery(767px) {
+          flex-direction: column;
+        }
+        @include mediaQuery(1024px, 768px) {
+          flex-direction: column;
+        }
+        input[type="date"] {
+          width: 60vh !important;
+          // background-color: aquamarine;
+          @include mediaQuery(767px) {
+            width: 40vh !important;
+          }
+        }
+        input[type="number"] {
+          width: 42vh;
+          // background-color: bisque;
+          @include mediaQuery(767px) {
+            width: 30vh !important;
+          }
+          @include mediaQuery(1024px, 768px) {
+            width: 32vh;
+          }
+        }
+      }
+      .form-group {
+        padding-bottom: 10px;
+        div.ic i {
+          background-color: gold;
+          position: relative;
+          margin-left: 90%;
+          margin-top: -20%;
+        }
+      }
+      .radio {
+        display: flex;
+        flex-direction: row;
+        gap: 0.5rem;
+        align-items: flex-start;
+        word-spacing: 3px;
+        padding-top: 1rem;
+      }
+      .home {
+        display: flex;
+        justify-content: center;
+        background-color: black;
+      }
+    }
+  }
+  aside {
+    width: 30%;
+    height: auto;
+    padding-bottom: 3rem;
+    position: sticky;
+    top: 30%;
+    background-color: white;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    @include mediaQuery(767px) {
+      width: 100%;
+      padding-top: 1rem;
+    }
+    div.floors {
+      //   padding-bottom: 2rem;
+      border-bottom: 0.01px solid $main;
+      div.immg {
+        position: relative;
+        width: 100%;
+        height: 35vh;
+        @include mediaQuery(1024px, 768px) {
+          height: 20vh;
+        }
+        img {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+      h6 {
+        font-weight: 600;
+        padding-top: 1rem;
+      }
+    }
+    div.tota {
+      h6 {
+        font-weight: 600;
+        padding-top: 1rem;
+      }
+      div.amount {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        justify-content: space-between;
+        h6 {
+          font-weight: 600;
+        }
+      }
+    }
+  }
+}
+@mixin nomad {
+  padding-left: 3rem;
+  padding-right: 3rem;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+  width: 100%;
+  height: auto;
+  // background-color: black;
+  background-color: rgb(11, 41, 97);
+
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  @include mediaQuery(767px) {
+    flex-direction: column;
+  }
+  input {
+    @include mediaQuery(1024px, 768px) {
+      width: 10vh;
+    }
+  }
+  a {
+    text-decoration: none;
+    font-size: 14px;
+    color: white;
+  }
+  h3 {
+    font-weight: 500;
+    @include mediaQuery(1024px, 768px) {
+      font-size: 17px;
+      font-weight: 600;
+    }
+  }
+  div.nomad {
+    gap: 1rem;
+    h5 {
+      padding-bottom: 1rem;
+      font-size: 14px;
+    }
+  }
+  div.email {
+    i {
+      font-size: 25px;
+      color: white;
+      border: 0.1px solid white;
+      padding: 0.1rem;
+    }
+  }
+}
+@mixin mediaQuery($arg...) {
+  @if length($arg) ==1 {
+    // Mobile Phone
+    @media screen and (max-width: nth($arg, 1)) {
+      @content;
+    }
+  }
+
+  @if length($arg) ==2 {
+    // Mobile Phone
+    @media screen and (max-width: nth($arg, 1)) and (min-width: nth($arg, 2)) {
+      @content;
+    }
+  }
+}

@@ -1,0 +1,86 @@
+@import "_nomadmix";
+@import "_nomadvar";
+@import url("https://fonts.googleapis.com/css2?family=Amita:wght@700&family=Cormorant:wght@300&family=Dosis:wght@200&family=Instrument+Serif&family=Italianno&family=Noto+Sans+Zanabazar+Square&family=Poppins:wght@200&family=Seaweed+Script&family=Space+Mono:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Amita:wght@700&family=Cormorant:wght@300&family=Dosis:wght@200&family=Instrument+Serif&family=Italianno&family=Montserrat:wght@200&family=Noto+Sans+Zanabazar+Square&family=Poppins:wght@200&family=Seaweed+Script&family=Space+Mono:wght@400;700&display=swap");
+body {
+  font-family: "Poppins", sans-serif;
+  // background-color: whitesmoke;
+  // background-color: #eee;
+  overflow-x: hidden;
+  background-color: rgb(253, 253, 253);
+  // button {
+  //   background-color: $main !important;
+  // }
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: $box;
+}
+
+section.one {
+  @include sectionOne;
+}
+section.wish {
+  @include sectionwish;
+}
+.navi {
+  @include navi;
+}
+section.service {
+  @include sectionService;
+}
+section.topdest {
+  @include dest;
+}
+section.why {
+  @include sectionwhy;
+}
+section.about {
+  @include sectionAbout;
+}
+div.one,
+div.two,
+div.three {
+  @include textRight;
+}
+section.top {
+  @include sectionTop;
+}
+section.weekend {
+  @include sectionweekend;
+}
+section.partners {
+  @include sectionpartners;
+}
+section.years {
+  @include years;
+}
+section.stay {
+  @include stay;
+}
+
+// section.partners div.partlogo {
+//   width: 100%;
+//   height: auto;
+//   @include grid(4, 2%);
+//   img {
+//     width: 100%;
+//     height: 100%;
+//     object-fit: cover;
+//     display: flex;
+//     flex-direction: row;
+//   }
+// }
+section.explore {
+  @include sectionexplore;
+}
+section.foot {
+  @include nomad;
+}
+section.mobile {
+  @include mobile;
+}

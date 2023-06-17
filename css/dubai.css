@@ -1,0 +1,750 @@
+@import url("https://fonts.googleapis.com/css2?family=Amita:wght@700&family=Cormorant:wght@300&family=Dosis:wght@200&family=Instrument+Serif&family=Italianno&family=Noto+Sans+Zanabazar+Square&family=Poppins:wght@200&family=Seaweed+Script&family=Space+Mono:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Amita:wght@700&family=Cormorant:wght@300&family=Dosis:wght@200&family=Instrument+Serif&family=Italianno&family=Montserrat:wght@200&family=Noto+Sans+Zanabazar+Square&family=Poppins:wght@200&family=Seaweed+Script&family=Space+Mono:wght@400;700&display=swap");
+body {
+  font-family: "poppons", sans-serif;
+}
+body button {
+  background-color: rgb(11, 41, 97) !important;
+}
+body button:hover {
+  background-color: rgb(0, 25, 72) !important;
+  color: white !important;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+section.one {
+  background-color: rgb(249, 249, 249);
+  -webkit-box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+          box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 9999;
+  margin-left: 0.05rem;
+  font-family: "poppins", sans-serif;
+  font-weight: 600;
+}
+section.one .container-fluid {
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+section.one .container-fluid button.navbar-toggler {
+  background-color: whitesmoke !important;
+}
+section.one .container-fluid button {
+  background-color: rgb(11, 41, 97) !important;
+}
+@media screen and (max-width: 767px) {
+  section.one .container-fluid {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  section.one .container-fluid {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+section.one .navbar-brand {
+  height: 50px;
+  width: 130px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  padding-left: 5rem;
+  padding-top: 0.7rem;
+}
+section.one .navbar-brand a {
+  position: relative;
+  text-align: center;
+  margin-top: -1rem;
+}
+section.one .navbar-brand img {
+  margin-left: -4rem;
+  position: absolute;
+  height: 80%;
+  width: 30%;
+  margin-top: -0.5rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+section.one .space {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+@media screen and (max-width: 767px) {
+  section.one .space {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    z-index: 999;
+  }
+}
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  section.one .space {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+}
+section.one .space .links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 1rem;
+  width: 120vh;
+  padding-left: 5rem;
+}
+@media screen and (max-width: 767px) {
+  section.one .space .links {
+    padding-left: 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    z-index: 999;
+    gap: 0.5rem;
+  }
+}
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  section.one .space .links {
+    padding-left: 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    z-index: 999;
+    gap: 0.5rem;
+  }
+}
+section.one .space .signs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 0.3rem;
+}
+section.one .space .signs button {
+  background-color: rgb(11, 41, 97) !important;
+}
+section.one .space .signs button:hover {
+  background-color: rgb(0, 25, 72) !important;
+}
+section.one .space .signs div.supp a {
+  text-decoration: none;
+}
+section.one .space .signs div.supp a i {
+  font-size: 30px;
+  color: rgb(11, 41, 97);
+  -webkit-transition: 0.03ms;
+  transition: 0.03ms;
+}
+@media screen and (max-width: 767px) {
+  section.one .space .signs {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    z-index: 999;
+    gap: 0;
+  }
+}
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  section.one .space .signs {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    z-index: 999;
+    gap: 0;
+  }
+}
+section.one .space a:hover {
+  color: rgb(11, 41, 97);
+}
+section.one div.links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+section.one div.links a {
+  color: black;
+}
+section.one div.dropdown {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+section.one div.dropdown a {
+  color: black;
+}
+section.one div.dropdown a:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+section.one div.dropdown .b:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+section.one div.dropdown .a:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+section.one div.dropdown .modal-body {
+  width: 100% !important;
+  background-color: whitesmoke;
+}
+section.one div.dropdown .modal-body .cash {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 3rem;
+}
+section.one div.dropdown .modal-body .allcur {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+section.one div.dropdown .modal-body p.hov:hover {
+  color: rgb(11, 41, 97);
+}
+section.one div.dropdown .abut {
+  width: 30px !important;
+}
+section.one div.dropdown .dropdown-menu {
+  min-width: 100% !important;
+  position: absolute;
+  z-index: 999;
+}
+section.one div.dropdown .dropdown-menu li a {
+  color: #000;
+}
+section.one div.dropdown .dropdown-menu li a:hover {
+  background-color: rgb(11, 41, 97);
+  color: white;
+}
+section.one div.dropdown a {
+  text-decoration: none;
+  color: black;
+}
+section.one div.dropdown a img {
+  width: 30px;
+  height: 30px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+div.nav {
+  padding-left: 3rem;
+  padding-top: 2rem;
+}
+
+div.att {
+  padding-left: 3rem;
+}
+
+section.dubai {
+  width: 100%;
+  height: auto;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 5rem;
+}
+@media screen and (max-width: 767px) {
+  section.dubai {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+section.dubai main {
+  width: 40%;
+  height: 170vh;
+}
+@media screen and (max-width: 767px) {
+  section.dubai main {
+    width: 100%;
+    height: auto;
+  }
+}
+section.dubai main .larger-checkbox {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+}
+section.dubai main label {
+  padding-left: 1rem;
+}
+section.dubai main div.inp {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+section.dubai main div.inp input[type=text] {
+  height: 10vh;
+  border: 0.3px solid rgb(11, 41, 97);
+  padding-left: 2rem;
+  padding-right: 1rem;
+}
+section.dubai main div.inp input[type=date] {
+  height: 10vh;
+  border: 0.3px solid rgb(11, 41, 97);
+  padding-left: 1rem;
+  padding-right: 1rem;
+  border: none;
+}
+section.dubai main div.inp .search {
+  padding-left: 40px; /* Add space for the icon */
+  background-image: url("/img/search-line.png");
+  background-repeat: no-repeat;
+  background-position: left center;
+  margin-left: 0;
+  border: none !important;
+}
+section.dubai main div.inp input {
+  border: none;
+}
+section.dubai main div.filt {
+  height: auto;
+  padding-top: 1rem;
+  padding-left: 1.5rem;
+}
+section.dubai main div.filt h6 {
+  border-bottom: 0.3px solid rgb(11, 41, 97);
+  height: 5vh;
+  font-family: 900;
+}
+section.dubai main div.filt p {
+  font-weight: 600;
+  border-bottom: 0.5px solid rgb(11, 41, 97);
+  padding-top: 1rem;
+}
+section.dubai main div.filt div.cat {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+section.dubai aside {
+  width: 60%;
+}
+@media screen and (max-width: 767px) {
+  section.dubai aside {
+    width: 100%;
+  }
+}
+section.dubai aside div.top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+section.dubai aside div.top p {
+  width: 30%;
+  height: 40px;
+  background-color: whitesmoke;
+  border: 0.3px solid rgb(11, 41, 97);
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 23px;
+}
+section.dubai aside div.top p a {
+  text-decoration: none;
+  color: black;
+}
+section.dubai aside div.top p:hover {
+  background-color: rgba(128, 128, 128, 0.354);
+  padding: 0.5rem;
+  border-radius: 23px;
+}
+section.dubai aside .cards .row {
+  padding-bottom: 20px;
+}
+section.dubai aside .cards .row .card {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-orient: horizontal !important;
+  -webkit-box-direction: normal !important;
+      -ms-flex-direction: row !important;
+          flex-direction: row !important;
+}
+@media screen and (max-width: 767px) {
+  section.dubai aside .cards .row .card {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+  }
+}
+section.dubai aside .cards .row .card .img-wrapper {
+  height: 250px;
+  width: 55vh;
+  position: relative;
+}
+@media screen and (max-width: 767px) {
+  section.dubai aside .cards .row .card .img-wrapper {
+    height: 180px;
+  }
+}
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  section.dubai aside .cards .row .card .img-wrapper {
+    width: 19vh !important;
+    height: 180px;
+  }
+}
+section.dubai aside .cards .row .card img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+section.dubai aside .cards .row .card .card-content {
+  width: 100% !important;
+}
+@media screen and (max-width: 767px) {
+  section.dubai aside .cards .row .card .card-content {
+    width: 50% !important;
+  }
+}
+@media screen and (max-width: 767px) {
+  section.dubai aside .cards .row .card .card-content h5 {
+    font-size: 15px;
+  }
+}
+section.dubai aside .cards .row .card .card-content .best {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 1rem;
+}
+section.dubai aside .cards .row .card .card-content .best p.seller {
+  width: 15vh;
+  height: 5vh;
+  border-radius: 5px;
+  background-color: rgb(11, 41, 97);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: whitesmoke;
+}
+@media screen and (max-width: 767px) {
+  section.dubai aside .cards .row .card .card-content .best p.seller {
+    text-align: center;
+    font-size: 13px !important;
+    height: 3vh;
+  }
+}
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  section.dubai aside .cards .row .card .card-content .best p.seller {
+    font-size: 13px !important;
+    height: 3vh;
+    text-align: center;
+  }
+}
+section.dubai aside .cards .row .card .card-content a {
+  text-decoration: none;
+  color: black;
+  -webkit-transition: 0.03ms;
+  transition: 0.03ms;
+}
+section.dubai aside .cards .row .card .card-content a:hover {
+  color: rgb(11, 41, 97);
+  -webkit-transform: scale(1.03);
+          transform: scale(1.03);
+}
+section.dubai aside .cards .row .card .card-content p.gaze {
+  font-size: 16px;
+}
+section.dubai aside .cards .row .card .card-content div.from {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 2rem;
+}
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  section.dubai aside .cards .row .card .card-content div.from {
+    margin-left: -9rem;
+    padding-top: 2rem;
+  }
+}
+section.dubai aside .cards .row .card .card-content div.from p {
+  font-size: 13px;
+}
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  section.dubai aside .cards .row .card .card-content div.from div.aed p {
+    font-size: 17px;
+  }
+}
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  section.dubai aside .cards .row .card .card-content div.from div.aed h6 {
+    font-size: 22px;
+  }
+}
+section.dubai aside .cards .row .card .card-content div.from div.aed button {
+  background-color: rgb(11, 41, 97) !important;
+  color: white !important;
+}
+section.dubai aside .cards .row .card .card-content div.from div.aed button:hover {
+  background-color: rgb(0, 25, 72) !important;
+}
+section.dubai aside .cards .row .card .card-content div.from div.aed button a {
+  color: white;
+}
+@media screen and (max-width: 767px) {
+  section.dubai aside .cards .row .card .card-content div.from div.aed {
+    position: absolute;
+    margin-left: -9rem;
+    margin-top: 3rem;
+  }
+}
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  section.dubai aside .cards .row .card .card-content div.from div.aed {
+    width: 9rem !important;
+    padding-right: 1rem;
+  }
+}
+section.dubai aside .cards .row .card .card-content div.from div.star {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 0.5rem;
+}
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  section.dubai aside .cards .row .card .card-content div.from div.star {
+    padding-left: -2rem;
+    padding-top: 1rem;
+  }
+}
+section.dubai aside .cards .row .card .card-content div.from div.star i {
+  color: rgb(255, 208, 0);
+}
+section.dubai aside .cards .row .card .card-content div.from div.star p.thik {
+  font-size: 13px;
+  font-weight: 700;
+}
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  section.dubai aside .cards .row .card .card-content div.from div.star p.thik {
+    font-size: 22px;
+  }
+}
+section.dubai aside .cards .row .card .card-content div.from div.star p.thik span {
+  font-weight: normal;
+}
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  section.dubai aside .cards .row .card .card-content div.from div.star p {
+    font-size: 18px;
+  }
+}
+section.dubai aside .cards .row .card .card-content div.from div.free {
+  font-size: 13px;
+}
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  section.dubai aside .cards .row .card .card-content div.from div.free {
+    font-size: larger;
+  }
+}
+section.dubai aside .cards .row .card .card-content div.from div.free i {
+  color: rgb(11, 41, 97);
+}
+
+section.foot {
+  padding-left: 3rem;
+  padding-right: 3rem;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+  width: 100%;
+  height: auto;
+  background-color: rgb(11, 41, 97);
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+@media screen and (max-width: 767px) {
+  section.foot {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+section.foot a {
+  text-decoration: none;
+  font-size: 14px;
+  color: white;
+}
+section.foot h3 {
+  font-weight: 500;
+}
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  section.foot h3 {
+    font-size: 17px;
+    font-weight: 600;
+  }
+}
+section.foot div.nomad {
+  gap: 1rem;
+}
+section.foot div.nomad h5 {
+  padding-bottom: 1rem;
+  font-size: 14px;
+}
+section.foot div.email i {
+  font-size: 20px;
+  color: white;
+  border: 0.1px solid white;
+  padding: 0.1rem;
+}

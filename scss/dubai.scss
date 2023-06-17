@@ -1,0 +1,37 @@
+@import "_dubaimix";
+@import "_nomadvar";
+@import url("https://fonts.googleapis.com/css2?family=Amita:wght@700&family=Cormorant:wght@300&family=Dosis:wght@200&family=Instrument+Serif&family=Italianno&family=Noto+Sans+Zanabazar+Square&family=Poppins:wght@200&family=Seaweed+Script&family=Space+Mono:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Amita:wght@700&family=Cormorant:wght@300&family=Dosis:wght@200&family=Instrument+Serif&family=Italianno&family=Montserrat:wght@200&family=Noto+Sans+Zanabazar+Square&family=Poppins:wght@200&family=Seaweed+Script&family=Space+Mono:wght@400;700&display=swap");
+body {
+  font-family: "poppons", sans-serif;
+
+  button {
+    background-color: $main !important;
+    &:hover {
+      background-color: rgb(0, 25, 72) !important;
+      color: white !important;
+    }
+  }
+}
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: $box;
+}
+section.one {
+  @include navi;
+}
+div.nav {
+  @include nav;
+}
+div.att {
+  @include att;
+}
+section.dubai {
+  @include dubai;
+}
+section.foot {
+  @include nomad;
+}

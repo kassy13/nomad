@@ -1,0 +1,28 @@
+@import "_step2mix";
+@import "_nomadvar";
+@import url("https://fonts.googleapis.com/css2?family=Amita:wght@700&family=Cormorant:wght@300&family=Dosis:wght@200&family=Instrument+Serif&family=Italianno&family=Noto+Sans+Zanabazar+Square&family=Poppins:wght@200&family=Seaweed+Script&family=Space+Mono:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Amita:wght@700&family=Cormorant:wght@300&family=Dosis:wght@200&family=Instrument+Serif&family=Italianno&family=Montserrat:wght@200&family=Noto+Sans+Zanabazar+Square&family=Poppins:wght@200&family=Seaweed+Script&family=Space+Mono:wght@400;700&display=swap");
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: whitesmoke;
+  overflow-x: hidden;
+  // button {
+  //   background-color: $main !important;
+  // }
+}
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: $box;
+}
+div.navi {
+  @include navi;
+}
+section.paye {
+  @include paye;
+}
+section.foot {
+  @include nomad;
+}

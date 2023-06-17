@@ -1,0 +1,382 @@
+@import url("https://fonts.googleapis.com/css2?family=Amita:wght@700&family=Cormorant:wght@300&family=Dosis:wght@200&family=Instrument+Serif&family=Italianno&family=Noto+Sans+Zanabazar+Square&family=Poppins:wght@200&family=Seaweed+Script&family=Space+Mono:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Amita:wght@700&family=Cormorant:wght@300&family=Dosis:wght@200&family=Instrument+Serif&family=Italianno&family=Montserrat:wght@200&family=Noto+Sans+Zanabazar+Square&family=Poppins:wght@200&family=Seaweed+Script&family=Space+Mono:wght@400;700&display=swap");
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: whitesmoke;
+  overflow-x: hidden;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+div.navi {
+  background-color: rgb(249, 249, 249);
+  -webkit-box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+          box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 9999;
+  margin-left: 0.05rem;
+  font-family: "poppins", sans-serif;
+  font-weight: 600;
+}
+div.navi .container-fluid {
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+div.navi .container-fluid button.navbar-toggler {
+  background-color: whitesmoke !important;
+}
+div.navi .container-fluid button {
+  background-color: rgb(11, 41, 97) !important;
+}
+@media screen and (max-width: 767px) {
+  div.navi .container-fluid {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  div.navi .container-fluid {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+div.navi .navbar-brand {
+  height: 50px;
+  width: 130px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  padding-left: 5rem;
+  padding-top: 0.7rem;
+}
+div.navi .navbar-brand a {
+  position: relative;
+  text-align: center;
+  margin-top: -1rem;
+}
+div.navi .navbar-brand img {
+  margin-left: -4rem;
+  position: absolute;
+  height: 80%;
+  width: 30%;
+  margin-top: -0.5rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+div.navi .space {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+@media screen and (max-width: 767px) {
+  div.navi .space {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    z-index: 999;
+  }
+}
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  div.navi .space {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+}
+div.navi .space .links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 1rem;
+  width: 120vh;
+  padding-left: 5rem;
+}
+@media screen and (max-width: 767px) {
+  div.navi .space .links {
+    padding-left: 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    z-index: 999;
+    gap: 0.5rem;
+  }
+}
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  div.navi .space .links {
+    padding-left: 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    z-index: 999;
+    gap: 0.5rem;
+  }
+}
+div.navi .space .signs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 0.3rem;
+}
+div.navi .space .signs button {
+  background-color: rgb(11, 41, 97) !important;
+}
+div.navi .space .signs button:hover {
+  background-color: rgb(0, 25, 72) !important;
+}
+div.navi .space .signs div.supp a {
+  text-decoration: none;
+}
+div.navi .space .signs div.supp a i {
+  font-size: 30px;
+  color: rgb(11, 41, 97);
+  -webkit-transition: 0.03ms;
+  transition: 0.03ms;
+}
+@media screen and (max-width: 767px) {
+  div.navi .space .signs {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    z-index: 999;
+    gap: 0;
+  }
+}
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  div.navi .space .signs {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    z-index: 999;
+    gap: 0;
+  }
+}
+div.navi .space a:hover {
+  color: rgb(11, 41, 97);
+}
+div.navi div.links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+div.navi div.links a {
+  color: black;
+}
+div.navi div.dropdown {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+div.navi div.dropdown a {
+  color: black;
+}
+div.navi div.dropdown a:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+div.navi div.dropdown .b:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+div.navi div.dropdown .a:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+div.navi div.dropdown .modal-body {
+  width: 100% !important;
+  background-color: whitesmoke;
+}
+div.navi div.dropdown .modal-body .cash {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 3rem;
+}
+div.navi div.dropdown .modal-body .allcur {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+div.navi div.dropdown .modal-body p.hov:hover {
+  color: rgb(11, 41, 97);
+}
+div.navi div.dropdown .abut {
+  width: 30px !important;
+}
+div.navi div.dropdown .dropdown-menu {
+  min-width: 100% !important;
+  position: absolute;
+  z-index: 999;
+}
+div.navi div.dropdown .dropdown-menu li a {
+  color: #000;
+}
+div.navi div.dropdown .dropdown-menu li a:hover {
+  background-color: rgb(11, 41, 97);
+  color: white;
+}
+div.navi div.dropdown a {
+  text-decoration: none;
+  color: black;
+}
+div.navi div.dropdown a img {
+  width: 30px;
+  height: 30px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+section.detaiils {
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+section.detaiils div.group form {
+  background-color: rgba(213, 213, 213, 0.256);
+  height: 67vh;
+  width: 100%;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-bottom: 3rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 1rem;
+}
+@media screen and (max-width: 767px) {
+  section.detaiils div.group form {
+    height: auto;
+  }
+}
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  section.detaiils div.group form {
+    height: auto;
+  }
+}
+section.detaiils div.group form .form-group {
+  padding-bottom: 10px;
+}
+section.detaiils div.group form .form-group div.ic i {
+  background-color: gold;
+  position: relative;
+  margin-left: 90%;
+  margin-top: -20%;
+}
+section.detaiils div.group form .radio {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 0.5rem;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  word-spacing: 3px;
+  padding-top: 1rem;
+}
+section.detaiils div.group form .home {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: black;
+}

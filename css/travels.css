@@ -1,0 +1,1126 @@
+@import url("https://fonts.googleapis.com/css2?family=Amita:wght@700&family=Cormorant:wght@300&family=Dosis:wght@200&family=Instrument+Serif&family=Italianno&family=Noto+Sans+Zanabazar+Square&family=Poppins:wght@200&family=Seaweed+Script&family=Space+Mono:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Amita:wght@700&family=Cormorant:wght@300&family=Dosis:wght@200&family=Instrument+Serif&family=Italianno&family=Montserrat:wght@200&family=Noto+Sans+Zanabazar+Square&family=Poppins:wght@200&family=Seaweed+Script&family=Space+Mono:wght@400;700&display=swap");
+body {
+  font-family: "poppins", serif;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+div.navi {
+  background-color: rgb(249, 249, 249);
+  -webkit-box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+          box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 9999;
+  margin-left: 0.05rem;
+  font-family: "poppins", sans-serif;
+  font-weight: 600;
+}
+div.navi .container-fluid {
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+div.navi .container-fluid button.navbar-toggler {
+  background-color: whitesmoke !important;
+}
+div.navi .container-fluid button {
+  background-color: rgb(11, 41, 97) !important;
+}
+@media screen and (max-width: 767px) {
+  div.navi .container-fluid {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  div.navi .container-fluid {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+div.navi .navbar-brand {
+  height: 50px;
+  width: 130px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  padding-left: 5rem;
+  padding-top: 0.7rem;
+}
+div.navi .navbar-brand a {
+  position: relative;
+  text-align: center;
+  margin-top: -1rem;
+}
+div.navi .navbar-brand img {
+  margin-left: -4rem;
+  position: absolute;
+  height: 80%;
+  width: 30%;
+  margin-top: -0.5rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+div.navi .space {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+@media screen and (max-width: 767px) {
+  div.navi .space {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    z-index: 999;
+  }
+}
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  div.navi .space {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+}
+div.navi .space .links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 1rem;
+  width: 120vh;
+  padding-left: 5rem;
+}
+@media screen and (max-width: 767px) {
+  div.navi .space .links {
+    padding-left: 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    z-index: 999;
+    gap: 0.5rem;
+  }
+}
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  div.navi .space .links {
+    padding-left: 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    z-index: 999;
+    gap: 0.5rem;
+  }
+}
+div.navi .space .signs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 0.3rem;
+}
+div.navi .space .signs button {
+  background-color: rgb(11, 41, 97) !important;
+}
+div.navi .space .signs button:hover {
+  background-color: rgb(0, 25, 72) !important;
+}
+div.navi .space .signs div.supp a {
+  text-decoration: none;
+}
+div.navi .space .signs div.supp a i {
+  font-size: 30px;
+  color: rgb(11, 41, 97);
+  -webkit-transition: 0.03ms;
+  transition: 0.03ms;
+}
+@media screen and (max-width: 767px) {
+  div.navi .space .signs {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    z-index: 999;
+    gap: 0;
+  }
+}
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  div.navi .space .signs {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    z-index: 999;
+    gap: 0;
+  }
+}
+div.navi .space a:hover {
+  color: rgb(11, 41, 97);
+}
+div.navi div.links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+div.navi div.links a {
+  color: black;
+}
+div.navi div.dropdown {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+div.navi div.dropdown a {
+  color: black;
+}
+div.navi div.dropdown a:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+div.navi div.dropdown .b:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+div.navi div.dropdown .a:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+div.navi div.dropdown .modal-body {
+  width: 100% !important;
+  background-color: whitesmoke;
+}
+div.navi div.dropdown .modal-body .cash {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 3rem;
+}
+div.navi div.dropdown .modal-body .allcur {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+div.navi div.dropdown .modal-body p.hov:hover {
+  color: rgb(11, 41, 97);
+}
+div.navi div.dropdown .abut {
+  width: 30px !important;
+}
+div.navi div.dropdown .dropdown-menu {
+  min-width: 100% !important;
+  position: absolute;
+  z-index: 999;
+}
+div.navi div.dropdown .dropdown-menu li a {
+  color: #000;
+}
+div.navi div.dropdown .dropdown-menu li a:hover {
+  background-color: rgb(11, 41, 97);
+  color: white;
+}
+div.navi div.dropdown a {
+  text-decoration: none;
+  color: black;
+}
+div.navi div.dropdown a img {
+  width: 30px;
+  height: 30px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+section.one .save img {
+  height: 70vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+section.one div.ours button {
+  background-color: rgb(11, 41, 97) !important;
+}
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  section.one div.ours div.aero {
+    margin-top: -8rem !important;
+  }
+}
+section.one div.ours .carousel-inner {
+  width: 100%;
+  height: 70vh !important;
+}
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  section.one div.ours .carousel-inner {
+    height: 50vh;
+  }
+}
+section.one div.ours .carousel-inner::before {
+  content: "";
+  width: 100%;
+  height: 70vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.315);
+  z-index: 1;
+}
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  section.one div.ours .carousel-inner::before {
+    height: 50vh;
+  }
+}
+section.one div.ours .carousel-inner .carousel-caption {
+  position: absolute !important;
+  z-index: 10 !important;
+  bottom: 12rem;
+}
+@media screen and (max-width: 767px) {
+  section.one div.ours .carousel-inner .carousel-caption {
+    bottom: 15rem;
+  }
+}
+section.one div.ours .carousel-inner .carousel-caption h3 {
+  font-weight: 600;
+  text-shadow: 2px 2px 2px black;
+  word-spacing: 5px;
+}
+section.one div.ours .carousel-inner img {
+  height: 70vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  section.one div.ours .carousel-inner img {
+    height: 50vh;
+  }
+}
+section.one form {
+  height: 31vh;
+  padding-bottom: 1rem;
+  background-color: whitesmoke;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 15px;
+  margin-top: -6rem;
+  z-index: 99;
+}
+@media screen and (max-width: 767px) {
+  section.one form {
+    width: auto;
+    height: 35vh;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: sticky;
+  }
+}
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  section.one form {
+    height: 17vh;
+    margin-top: -21rem;
+  }
+}
+section.one form div.radios {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 5rem;
+  color: black;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-bottom: 0.5rem;
+  margin-top: -1rem;
+}
+@media screen and (max-width: 767px) {
+  section.one form div.radios {
+    margin-top: 1rem;
+  }
+}
+section.one form div.bookings {
+  gap: 2rem;
+  background-color: whitesmoke;
+  border-radius: 15px;
+  -webkit-box-shadow: 0px -2px 2px rgb(11, 41, 97);
+          box-shadow: 0px -2px 2px rgb(11, 41, 97);
+  height: auto;
+  padding-bottom: 1rem;
+  position: relative;
+}
+@media screen and (max-width: 767px) {
+  section.one form div.bookings {
+    width: 50vh;
+    height: 30vh;
+    gap: 1rem;
+    margin-top: 1rem;
+    position: sticky;
+  }
+}
+section.one form div.bookings div.firsts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 1rem;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 1.5rem;
+}
+@media screen and (max-width: 767px) {
+  section.one form div.bookings div.firsts {
+    width: 20vh;
+    padding-left: 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    padding-left: 0 !important;
+  }
+}
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  section.one form div.bookings div.firsts {
+    padding-left: 0;
+    width: 22vh;
+  }
+}
+section.one form div.bookings div.firsts div.ardep {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 16vh;
+}
+@media screen and (max-width: 767px) {
+  section.one form div.bookings div.firsts div.ardep {
+    width: 10vh;
+  }
+}
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  section.one form div.bookings div.firsts div.ardep {
+    width: 22vh;
+    height: 9vh;
+    padding-left: 1rem;
+  }
+}
+section.one form div.bookings div.firsts div.ardep .depart {
+  width: 40vh;
+  font-size: 1rem;
+}
+@media screen and (max-width: 767px) {
+  section.one form div.bookings div.firsts div.ardep .depart {
+    width: 20vh;
+    position: absolute;
+    top: 0;
+    margin-left: -2rem;
+  }
+}
+section.one form div.bookings div.firsts div.ardep .arrive {
+  width: 40vh;
+}
+@media screen and (max-width: 767px) {
+  section.one form div.bookings div.firsts div.ardep .arrive {
+    width: 20vh;
+    position: absolute;
+    top: 7rem;
+    margin-left: -2rem;
+  }
+}
+section.one form div.bookings div.firsts div.ardep .form-label {
+  margin-top: -19% !important;
+  text-align: center;
+}
+section.one form .input-group-text {
+  gap: 1rem;
+}
+section.one form .seconds {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+@media screen and (max-width: 767px) {
+  section.one form .seconds {
+    gap: 1rem;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    width: 27vh;
+  }
+}
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  section.one form .seconds {
+    gap: 2rem;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+section.one form .seconds .plusimp {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+section.one form .seconds .plusimp div.departt {
+  width: 30vh;
+  position: relative;
+  border: none;
+}
+@media screen and (max-width: 767px) {
+  section.one form .seconds .plusimp div.departt {
+    width: 13.5vh;
+  }
+}
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  section.one form .seconds .plusimp div.departt {
+    width: 13.5vh;
+  }
+}
+section.one form .seconds .plusimp div.departt input[type=datetime-Local] {
+  width: 28vh;
+  border: none;
+}
+@media screen and (max-width: 767px) {
+  section.one form .seconds .plusimp div.departt input[type=datetime-Local] {
+    width: 15vh;
+  }
+}
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  section.one form .seconds .plusimp div.departt input[type=datetime-Local] {
+    width: 10.5vh;
+  }
+}
+section.one form .seconds .plusimp div.departt div.return {
+  position: relative;
+  width: 100%;
+}
+@media screen and (max-width: 767px) {
+  section.one form .seconds .plusimp div.departt div.return {
+    width: 10.5vh;
+  }
+}
+section.one form .seconds .plusimp div.departt div.dropdown .tg {
+  min-width: 28vh;
+  border: none;
+  background-color: rgba(128, 128, 128, 0.151);
+  color: white;
+}
+@media screen and (max-width: 767px) {
+  section.one form .seconds .plusimp div.departt div.dropdown .tg {
+    min-width: 15vh;
+  }
+}
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  section.one form .seconds .plusimp div.departt div.dropdown .tg {
+    min-width: 10.5vh;
+  }
+}
+section.one form .seconds .plusimp div.arrr {
+  width: 30vh;
+  position: relative;
+}
+@media screen and (max-width: 767px) {
+  section.one form .seconds .plusimp div.arrr {
+    width: 13.5vh;
+  }
+}
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  section.one form .seconds .plusimp div.arrr {
+    width: 10.5vh;
+  }
+}
+section.one form .seconds .plusimp div.arrr div input[type=datetime-Local] {
+  width: 28vh;
+  border: none;
+}
+@media screen and (max-width: 767px) {
+  section.one form .seconds .plusimp div.arrr div input[type=datetime-Local] {
+    width: 13.5vh;
+  }
+}
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  section.one form .seconds .plusimp div.arrr div input[type=datetime-Local] {
+    width: 10.5vh;
+  }
+}
+section.one form .seconds .plusimp div.arrr div.dropdown .tg {
+  min-width: 28vh;
+  border: none;
+  color: white;
+}
+@media screen and (max-width: 767px) {
+  section.one form .seconds .plusimp div.arrr div.dropdown .tg {
+    min-width: 10.5vh;
+  }
+}
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  section.one form .seconds .plusimp div.arrr div.dropdown .tg {
+    min-width: 10.5vh;
+  }
+}
+section.one form .seconds div.adult {
+  width: 30vh;
+  height: 15vh !important;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+@media screen and (max-width: 767px) {
+  section.one form .seconds div.adult {
+    width: 25vh;
+    height: 10vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    margin-top: -1rem;
+  }
+}
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  section.one form .seconds div.adult {
+    width: 5vh;
+    height: 5vh !important;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding-top: 2rem !important;
+  }
+}
+@media screen and (max-width: 767px) {
+  section.one form .seconds div.adult p {
+    margin-top: 1rem;
+    padding-top: 1rem;
+  }
+}
+section.one form .seconds div.adult .traveller {
+  width: 30vh;
+  height: 8vh;
+}
+@media screen and (max-width: 767px) {
+  section.one form .seconds div.adult .traveller {
+    width: 15vh;
+  }
+}
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  section.one form .seconds div.adult .traveller {
+    width: 5vh;
+    height: 3rem;
+  }
+}
+section.one form .seconds div.adult .traveller .form-select {
+  height: 8vh;
+  width: 30vh;
+}
+@media screen and (max-width: 767px) {
+  section.one form .seconds div.adult .traveller .form-select {
+    width: 25vh;
+    height: 5vh;
+    position: relative;
+  }
+}
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  section.one form .seconds div.adult .traveller .form-select {
+    width: 12.5vh;
+    height: 5vh;
+  }
+}
+section.one form .seconds div.adult .traveller .dropdown-menu li.spp {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding: 1rem;
+}
+section.one form .seconds div.adult .traveller .dropdown-menu li.spp .selecttrav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+section.one form .seconds div.adult .traveller .dropdown-menu li.spp .selecttrav p i {
+  font-size: 25px;
+}
+section.one form .seconds div.adult .traveller .dropdown-menu div.incr {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 0.3rem;
+}
+section.one form .seconds div.adult .traveller .dropdown-menu div.incr button {
+  width: 5vh;
+  height: 5vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+section.one form button {
+  background-color: rgb(11, 41, 97) !important;
+}
+
+div.nav {
+  padding-left: 3rem;
+  position: absolute;
+  top: -152%;
+  left: -10rem;
+  padding-top: 1rem;
+  color: white;
+}
+@media screen and (max-width: 767px) {
+  div.nav {
+    left: -6rem;
+    top: -202%;
+  }
+}
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  div.nav {
+    top: -282%;
+  }
+}
+div.nav a {
+  color: white;
+  font-size: larger;
+}
+div.nav li {
+  color: rgb(207, 206, 206) !important;
+}
+
+section.cheap {
+  padding-left: 4rem;
+  padding-right: 4rem;
+  padding-top: 2rem;
+}
+@media screen and (max-width: 767px) {
+  section.cheap {
+    height: auto;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  section.cheap {
+    height: auto;
+  }
+}
+section.cheap h1 {
+  padding-bottom: 1rem;
+  font-weight: 600;
+}
+section.cheap div.exc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 2rem;
+  padding-bottom: 3rem;
+}
+section.cheap div.exc button {
+  background-color: rgb(11, 41, 97);
+  color: white;
+}
+section.cheap div.exc button:hover {
+  background-color: rgb(0, 25, 72) !important;
+}
+section.cheap div.exc div.allone {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 2rem !important;
+}
+section.cheap div.exc div.allone div.lagos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1rem;
+  background-color: rgba(157, 203, 255, 0.056);
+  -webkit-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3), 2px 2px 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3), 2px 2px 10px rgba(0, 0, 0, 0.2);
+  gap: 2rem;
+}
+section.cheap div.exc div.allone div.lagos:hover {
+  -webkit-transform: scale(1.03);
+          transform: scale(1.03);
+}
+@media screen and (max-width: 767px) {
+  section.cheap div.exc div.allone div.lagos {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 1rem;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: 1fr 1rem 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    width: 20vh;
+    height: 30vh;
+    overflow-x: hidden;
+  }
+}
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  section.cheap div.exc div.allone div.lagos {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 25rem;
+    width: 30vh;
+  }
+}
+section.cheap div.exc div.allone div.lagos div.i {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 5vh;
+  height: 10vh;
+  background-color: forestgreen;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+}
+section.cheap div.exc div.allone div.lagos div.imgg {
+  width: 13vh;
+  height: 13vh;
+  position: relative;
+  background-color: white;
+}
+@media screen and (max-width: 767px) {
+  section.cheap div.exc div.allone div.lagos div.imgg {
+    width: 10vh;
+    height: 8vh;
+  }
+}
+section.cheap div.exc div.allone div.lagos div.imgg img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 99;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+section.cheap div.exc div.allone div.lagos div.route {
+  width: 32vh;
+  height: 15vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  font-size: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+section.cheap div.exc div.allone div.lagos div.route p {
+  font-size: 17px;
+  font-weight: 600;
+}
+@media screen and (max-width: 767px) {
+  section.cheap div.exc div.allone div.lagos div.route p {
+    font-size: 12px;
+    margin-left: 0.5rem;
+  }
+}
+@media screen and (max-width: 767px) {
+  section.cheap div.exc div.allone div.lagos div.route {
+    margin-left: -1rem;
+    margin-top: -3rem;
+  }
+}
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  section.cheap div.exc div.allone div.lagos div.route {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+section.cheap div.exc div.allone div.lagos div.route i {
+  color: rgb(11, 41, 97);
+  font-size: 22px;
+}
+section.cheap div.exc div.allone div.lagos div.booknow {
+  width: 28vh;
+  height: 15vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+@media screen and (max-width: 767px) {
+  section.cheap div.exc div.allone div.lagos div.booknow button {
+    width: 16vh !important;
+    margin-left: 1rem;
+  }
+}
+@media screen and (max-width: 767px) {
+  section.cheap div.exc div.allone div.lagos div.booknow {
+    margin-top: -4rem;
+    margin-left: -1rem;
+  }
+}
+section.cheap div.exc div.allone div.lagos div.booknow p {
+  font-size: 15px;
+}
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  section.cheap div.exc div.allone div.lagos div.booknow p {
+    text-align: center;
+  }
+}
+section.cheap div.exc div.allone div.lagos div.booknow p span {
+  font-weight: 600;
+}
+section.cheap div.quest h3 {
+  font-weight: 600;
+}
+
+section.foot {
+  padding-left: 3rem;
+  padding-right: 3rem;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+  width: 100%;
+  height: auto;
+  background-color: rgb(11, 41, 97);
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+@media screen and (max-width: 767px) {
+  section.foot {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+section.foot a {
+  text-decoration: none;
+  font-size: 14px;
+  color: white;
+}
+section.foot h3 {
+  font-weight: 500;
+}
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  section.foot h3 {
+    font-size: 17px;
+    font-weight: 600;
+  }
+}
+section.foot div.nomad {
+  gap: 1rem;
+}
+section.foot div.nomad h5 {
+  padding-bottom: 1rem;
+  font-size: 14px;
+}
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  section.foot div.email input {
+    width: 10vh;
+  }
+}
+section.foot div.email i {
+  font-size: 25px;
+  color: white;
+  border: 0.1px solid white;
+  padding: 0.1rem;
+}

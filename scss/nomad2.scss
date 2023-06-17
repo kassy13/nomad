@@ -1,0 +1,63 @@
+@import "_nomadmix2";
+@import "_nomadvar";
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: $box;
+}
+// body {
+//   width: 100%;
+// }
+section.one {
+  @include sectionOne;
+}
+// .form {
+//   @include mediaQuery(767px) {
+//     left: 10%;
+//   }
+// }
+
+// section.service {
+//   @include sectionService;
+// }
+// section.about {
+//   @include sectionAbout;
+// }
+// div.one,
+// div.two,
+// div.three {
+//   @include textRight;
+// }
+// section.top {
+//   @include sectionTop;
+// }
+// section.weekend {
+//   @include sectionweekend;
+// }
+// section.partners {
+//   @include sectionpartners;
+// }
+// section.partners div.partlogo {
+//   width: 100%;
+//   height: auto;
+//   @include grid(4, 2%);
+//   img {
+//     width: 100%;
+//     height: 100%;
+//     object-fit: cover;
+//     display: flex;
+//     flex-direction: row;
+//   }
+// }
+// section.explore {
+//   @include sectionexplore;
+// }
+// section.foot {
+//   @include nomad;
+// }
+// section.mobile {
+//   @include mobile;
+// }

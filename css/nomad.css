@@ -1,0 +1,2286 @@
+@import url("https://fonts.googleapis.com/css2?family=Amita:wght@700&family=Cormorant:wght@300&family=Dosis:wght@200&family=Instrument+Serif&family=Italianno&family=Noto+Sans+Zanabazar+Square&family=Poppins:wght@200&family=Seaweed+Script&family=Space+Mono:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Amita:wght@700&family=Cormorant:wght@300&family=Dosis:wght@200&family=Instrument+Serif&family=Italianno&family=Montserrat:wght@200&family=Noto+Sans+Zanabazar+Square&family=Poppins:wght@200&family=Seaweed+Script&family=Space+Mono:wght@400;700&display=swap");
+body {
+  font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
+  background-color: rgb(253, 253, 253);
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+section.one {
+  width: 100%;
+  height: 83vh;
+  padding-right: -1rem;
+  overflow: hidden;
+}
+@media screen and (max-width: 767px) {
+  section.one {
+    height: 85vh;
+  }
+}
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  section.one {
+    height: 83vh;
+  }
+}
+section.one div.row .social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-left: 5rem;
+  position: absolute;
+  top: 40%;
+  z-index: 99;
+  gap: 1rem;
+}
+@media screen and (max-width: 767px) {
+  section.one div.row .social {
+    display: none;
+  }
+}
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  section.one div.row .social {
+    display: none;
+  }
+}
+section.one div.row .social a {
+  text-decoration: none;
+  color: white;
+  z-index: 99;
+}
+section.one div.row .social a i {
+  font-size: 20px;
+  z-index: 99;
+}
+section.one div.row .social a i:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  color: rgb(11, 41, 97);
+}
+section.one .save {
+  position: relative;
+}
+section.one .save .carousel-inner {
+  height: 70vh !important;
+  width: 102% !important;
+}
+section.one .save .carousel-inner::before {
+  content: "";
+  width: 100%;
+  height: 70vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.459);
+  z-index: 1;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+section.one .save .carousel-inner .carousel-inner .carousel-item {
+  -webkit-transition-duration: 0.03s !important;
+          transition-duration: 0.03s !important; /* Adjust the duration as needed */
+  position: relative;
+  height: 100vh;
+}
+section.one .save .carousel-inner .carousel-caption {
+  position: absolute !important;
+  z-index: 10 !important;
+  bottom: 7rem;
+}
+section.one .save .carousel-inner img {
+  height: 70vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+section.one .save .carousel-inner h3 {
+  font-size: 40px;
+  font-weight: 600;
+  text-shadow: 4px 4px 14px rgb(0, 0, 0);
+}
+section.one .save .carousel-inner p {
+  font-size: 20px;
+}
+section.one .form {
+  height: 100px;
+  width: 150vh;
+  border-radius: 15px;
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: -4%;
+  position: sticky;
+  z-index: 9;
+  left: 15%;
+  right: 15%;
+  gap: 2rem;
+}
+@media screen and (max-width: 767px) {
+  section.one .form {
+    width: auto;
+    height: 22vh !important;
+    margin-top: -12vh;
+    left: -15px;
+    right: -15px;
+    font-size: small;
+    padding: 0.2rem !important;
+    padding-bottom: 1rem !important;
+    padding-top: 1rem !important;
+    overflow-y: hidden;
+    position: sticky !important;
+    top: 50% !important;
+  }
+}
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  section.one .form {
+    width: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    left: 10px;
+    right: 10px;
+    height: 100px;
+    bottom: -7%;
+  }
+}
+section.one .form div.bookk {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 1rem;
+}
+@media screen and (max-width: 767px) {
+  section.one .form div.bookk {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 22vh;
+    height: 25vh;
+    gap: 0 !important;
+    padding-top: 0.5rem;
+    padding-left: 1rem;
+  }
+}
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  section.one .form div.bookk {
+    width: 32vh;
+  }
+}
+section.one .form div.bookk .place {
+  width: 33vh;
+  height: 12vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+@media screen and (max-width: 767px) {
+  section.one .form div.bookk .place {
+    position: sticky !important;
+    width: 22vh;
+    margin-top: -1rem;
+  }
+}
+@media screen and (max-width: 767px) {
+  section.one .form div.bookk .place label {
+    font-size: 0.5rem;
+    width: 22vh;
+  }
+}
+section.one .form div.bookk .place input.fly {
+  padding-left: 40px; /* Add space for the icon */
+  background-image: url("/img/flight-takeoff-fill.png");
+  background-repeat: no-repeat;
+  background-position: left center;
+  margin-left: 0;
+  border-bottom: 0.01px solid rgb(11, 41, 97);
+}
+@media screen and (max-width: 767px) {
+  section.one .form div.bookk .place input.fly {
+    background-color: whitesmoke;
+    width: 22vh;
+    height: 3vh;
+  }
+}
+section.one .form div.bookk .place .where {
+  font-size: 13px;
+  font-weight: 600;
+}
+section.one .form div.bookk .acco {
+  width: 33vh;
+  height: 12vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+@media screen and (max-width: 767px) {
+  section.one .form div.bookk .acco label {
+    font-size: 0.5rem;
+    width: 22vh;
+  }
+}
+section.one .form div.bookk .acco input.fly {
+  padding-left: 40px; /* Add space for the icon */
+  background-image: url("/img/hotel-bed-fill.png");
+  background-repeat: no-repeat;
+  background-position: left center;
+  margin-left: 0;
+  border-bottom: 0.01px solid rgb(11, 41, 97);
+}
+@media screen and (max-width: 767px) {
+  section.one .form div.bookk .acco input.fly {
+    background-color: whitesmoke;
+    width: 22vh;
+    height: 3vh;
+  }
+}
+section.one .form div.bookk .acco .where {
+  font-size: 13px;
+  font-weight: 600;
+}
+section.one .form div.sheck {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 70vh;
+  gap: 1rem;
+}
+section.one .form div.sheck label {
+  font-weight: 600;
+}
+@media screen and (max-width: 767px) {
+  section.one .form div.sheck {
+    width: 22vh;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-right: 1rem;
+  }
+}
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  section.one .form div.sheck {
+    width: 32vh;
+  }
+}
+section.one .form div.sheck .check {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 32vh;
+  height: 12vh;
+  border-bottom: 0.01px solid rgb(11, 41, 97);
+}
+section.one .form div.sheck .check input {
+  padding-top: 1rem;
+}
+@media screen and (max-width: 767px) {
+  section.one .form div.sheck .check {
+    background-color: whitesmoke;
+    padding-left: -1rem !important;
+    width: 18vh;
+    height: 7vh;
+    margin-top: 1.5rem;
+  }
+}
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  section.one .form div.sheck .check {
+    width: 20vh;
+    height: 10vh;
+  }
+}
+section.one .form div.sheck .button {
+  width: 32vh;
+  padding-top: 0.7rem;
+  padding-right: 1rem;
+  height: 12vh;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+section.one .form div.sheck .button button {
+  background-color: rgb(11, 41, 97) !important;
+}
+section.one .form div.sheck .button button:hover {
+  background-color: rgb(0, 25, 72) !important;
+}
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  section.one .form div.sheck .button {
+    padding-top: 2.5rem;
+    width: 10vh;
+    position: sticky !important;
+  }
+}
+section.one .form div.sheck .button .btn {
+  height: 9vh;
+  width: 100%;
+}
+@media screen and (max-width: 767px) {
+  section.one .form div.sheck .button .btn {
+    padding: 0px;
+    width: 10vh;
+    position: sticky !important;
+    padding-left: -1rem !important;
+    width: 18vh;
+    height: 7vh;
+  }
+}
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  section.one .form div.sheck .button .btn {
+    height: 6vh;
+  }
+}
+section.one .form input {
+  background-color: transparent;
+  border: none;
+}
+
+section.wish {
+  padding-left: 3rem;
+  padding-right: 3rem;
+  width: 100%;
+  height: 25vh;
+  position: relative;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-orient: horizontal !important;
+  -webkit-box-direction: normal !important;
+      -ms-flex-direction: row !important;
+          flex-direction: row !important;
+}
+@media screen and (max-width: 767px) {
+  section.wish {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: auto;
+  }
+}
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  section.wish {
+    margin-top: -2rem;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+section.wish div.list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  padding-left: 1rem;
+  background-color: white;
+  gap: 1rem;
+}
+@media screen and (max-width: 767px) {
+  section.wish div.list {
+    height: auto;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 1rem;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    gap: 0.5rem;
+    padding: 1rem;
+    background-color: rgb(255, 255, 255);
+    padding-bottom: 2rem;
+  }
+}
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  section.wish div.list {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    background-color: white;
+  }
+}
+section.wish div.list div.deal {
+  z-index: 1;
+  width: 35%;
+  padding-left: 1rem;
+}
+@media screen and (max-width: 767px) {
+  section.wish div.list div.deal {
+    font-size: 15px;
+    width: 100% !important;
+  }
+}
+section.wish div.list div.deal h3 {
+  font-size: 17px;
+}
+section.wish div.list div.deal h3.spec {
+  font-size: 16px;
+}
+section.wish div.list div.deal div.hid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1rem;
+}
+section.wish div.list div.deal div.hid i {
+  font-size: 30px;
+  width: 40px;
+  height: 40%;
+}
+
+.navi {
+  background-color: white;
+  -webkit-box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+          box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 9999;
+  margin-left: 0.05rem;
+  font-family: "poppins", sans-serif;
+  font-weight: 600;
+}
+.navi .container-fluid {
+  padding-left: 2rem;
+}
+.navi .container-fluid button.navbar-toggler {
+  background-color: whitesmoke !important;
+  font-size: 15px !important;
+}
+.navi .container-fluid button {
+  background-color: rgb(11, 41, 97) !important;
+  padding-left: 0.3rem;
+  padding-right: 0.3rem;
+  font-size: 13px !important;
+}
+.navi .container-fluid button.navbar-toggler {
+  font-size: 15px !important;
+  border: 3px solid rgb(11, 41, 97) !important;
+}
+@media screen and (max-width: 767px) {
+  .navi .container-fluid {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  .navi .container-fluid {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+.navi .navbar-brand {
+  height: 50px;
+  width: 130px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  padding-left: 5rem;
+  padding-top: 0.7rem;
+}
+.navi .navbar-brand a {
+  position: relative;
+  text-align: center;
+  margin-top: -1rem;
+}
+.navi .navbar-brand img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-left: -7rem;
+  position: absolute;
+  height: 30vh;
+  width: 30vh;
+  margin-top: -1.5rem;
+}
+.navi .space {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+@media screen and (max-width: 767px) {
+  .navi .space {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    z-index: 999;
+  }
+}
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  .navi .space {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+}
+.navi .space .links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 95vh;
+  padding-left: 1rem;
+  margin-left: -2rem;
+}
+@media screen and (max-width: 767px) {
+  .navi .space .links {
+    padding-left: 1rem;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    z-index: 999;
+    gap: 0.5rem;
+  }
+}
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  .navi .space .links {
+    padding-left: 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    z-index: 999;
+    gap: 0.5rem;
+  }
+}
+.navi .space .signs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 1rem;
+  margin-left: 6rem;
+}
+@media screen and (max-width: 767px) {
+  .navi .space .signs {
+    margin-left: -1rem;
+  }
+}
+.navi .space .signs button {
+  background-color: rgb(11, 41, 97) !important;
+}
+.navi .space .signs button:hover {
+  background-color: transparent !important;
+  color: rgb(11, 41, 97);
+}
+.navi .space .signs div.supp {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.navi .space .signs div.supp a {
+  text-decoration: none;
+  color: rgb(11, 41, 97);
+  font-size: 15px;
+}
+.navi .space .signs div.supp a i {
+  font-size: 15px;
+  color: rgb(11, 41, 97);
+  -webkit-transition: 0.03ms;
+  transition: 0.03ms;
+}
+@media screen and (max-width: 767px) {
+  .navi .space .signs {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    z-index: 999;
+    gap: 0;
+  }
+}
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  .navi .space .signs {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    z-index: 999;
+    gap: 0;
+  }
+}
+.navi .space a:hover {
+  color: rgb(11, 41, 97);
+}
+.navi div.links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.navi div.links a {
+  color: black;
+}
+.navi div.dropdown {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.navi div.dropdown a {
+  font-size: 15px;
+  color: black;
+}
+.navi div.dropdown a:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+.navi div.dropdown .b:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+.navi div.dropdown .a:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+.navi div.dropdown .modal-body {
+  width: 100% !important;
+  background-color: whitesmoke;
+}
+.navi div.dropdown .modal-body .cash {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 3rem;
+}
+.navi div.dropdown .modal-body .allcur {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.navi div.dropdown .modal-body p.hov:hover {
+  color: rgb(11, 41, 97);
+}
+.navi div.dropdown .abut {
+  width: 30px !important;
+}
+.navi div.dropdown .dropdown-menu {
+  min-width: 100% !important;
+  position: absolute;
+  z-index: 999;
+}
+.navi div.dropdown .dropdown-menu li a {
+  color: #000;
+}
+.navi div.dropdown .dropdown-menu li a:hover {
+  background-color: rgb(11, 41, 97);
+  color: white;
+}
+.navi div.dropdown a {
+  text-decoration: none;
+  color: black;
+  font-size: 15px;
+}
+.navi div.dropdown a img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 25px;
+  height: 25px;
+}
+
+section.service {
+  padding-left: 3rem;
+  padding-right: 3rem;
+  padding-top: 5rem;
+  overflow-x: hidden;
+}
+@media screen and (max-width: 767px) {
+  section.service {
+    padding-left: 2rem;
+  }
+}
+section.service div.servi h2 {
+  text-align: center;
+  padding-top: 1rem;
+}
+@media screen and (max-width: 767px) {
+  section.service div.servi h2 {
+    padding-top: 0;
+    font-size: larger;
+  }
+}
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  section.service div.servi h2 {
+    padding-top: 0;
+    font-size: larger;
+  }
+}
+section.service div.servi h5 {
+  text-align: center;
+}
+@media screen and (max-width: 767px) {
+  section.service div.servi h5 {
+    padding-top: 0;
+    font-size: small;
+  }
+}
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  section.service div.servi h5 {
+    padding-top: 0;
+    font-size: small;
+  }
+}
+section.service div.things {
+  padding-top: 0;
+}
+section.service div.things .cards {
+  gap: 1rem;
+}
+section.service div.things .cards .card {
+  height: 300px;
+  position: relative;
+}
+@media screen and (max-width: 767px) {
+  section.service div.things .cards .card {
+    width: 100% !important;
+  }
+}
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  section.service div.things .cards .card {
+    width: 100% !important;
+  }
+}
+section.service div.things .cards .card .card-body {
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  z-index: 999;
+  bottom: 0;
+  background-color: rgba(7, 7, 7, 0.326) !important;
+  color: whitesmoke;
+}
+section.service div.things .cards .card .card-body:hover {
+  background-color: RGBA(13, 110, 253, var(--bs-bg-opacity, 1)) !important;
+}
+section.service div.things .cards .card .card-body a {
+  text-decoration: none;
+  color: whitesmoke;
+}
+section.service div.things .cards .card img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 500px;
+}
+section.service .row {
+  padding-top: 2rem;
+}
+
+section.topdest {
+  padding-top: 2rem;
+  padding-left: 3rem;
+  padding-right: 2.5rem;
+  overflow-x: hidden;
+}
+@media screen and (max-width: 767px) {
+  section.topdest {
+    height: auto;
+    margin-bottom: 2rem;
+  }
+}
+section.topdest div.fix {
+  background-color: white;
+}
+section.topdest div.fix div.todays h3 {
+  padding-left: 1rem;
+  padding-top: 1rem;
+  font-weight: 600;
+  font-size: 30px;
+}
+section.topdest div.fix div.row {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-orient: horizontal !important;
+  -webkit-box-direction: normal !important;
+      -ms-flex-direction: row !important;
+          flex-direction: row !important;
+  -webkit-box-pack: justify !important;
+      -ms-flex-pack: justify !important;
+          justify-content: space-between !important;
+}
+section.topdest div.fix div.row .cards {
+  padding-bottom: 2rem;
+  z-index: 99;
+  padding-top: 1rem;
+  padding-left: 1rem;
+}
+section.topdest div.fix div.row .cards .card {
+  height: 250px;
+  position: relative;
+  -webkit-transition: 0.3ms;
+  transition: 0.3ms;
+  -o-object-fit: contain !important;
+     object-fit: contain !important;
+}
+section.topdest div.fix div.row .cards .card:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+section.topdest div.fix div.row .cards .card a {
+  position: relative;
+}
+section.topdest div.fix div.row .cards .card a img {
+  height: 250px;
+  -webkit-transition: 0.3ms ease-in;
+  transition: 0.3ms ease-in;
+  -o-object-fit: cover !important;
+     object-fit: cover !important;
+}
+@media screen and (max-width: 767px) {
+  section.topdest div.fix div.row .cards .card {
+    width: 100% !important;
+  }
+}
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  section.topdest div.fix div.row .cards .card {
+    width: 100% !important;
+  }
+}
+section.topdest div.fix div.row .cards .card .card-body {
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  z-index: 99;
+  bottom: 0;
+  color: whitesmoke;
+  background-color: rgba(0, 0, 0, 0.568);
+}
+section.topdest div.fix div.row .cards .card .card-body a {
+  text-decoration: none;
+  color: whitesmoke;
+}
+section.topdest div.fix div.row .cards .card .card-body h5,
+section.topdest div.fix div.row .cards .card .card-body p {
+  z-index: 1;
+  font-weight: 600;
+  font-size: 13px;
+}
+section.topdest div.fix div.row .cards .card .card-body .card-text p {
+  padding-left: -1rem !important;
+}
+section.topdest div.fix div.row .cards .card .card-body .card-text span {
+  font-weight: 900 !important;
+  font-size: larger;
+}
+
+section.why {
+  padding-left: 3rem;
+  padding-right: 3rem;
+  padding-bottom: 2rem;
+  margin-top: 2rem;
+  width: 100%;
+  height: 55vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 3rem;
+  position: relative;
+}
+@media screen and (max-width: 767px) {
+  section.why {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: auto;
+    height: auto;
+  }
+}
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  section.why {
+    height: 33vh;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+  }
+}
+section.why main {
+  width: 50%;
+  height: 50vh;
+  background-color: white;
+  padding: 1rem;
+}
+section.why main h3 {
+  font-weight: 600;
+}
+section.why main button {
+  background-color: rgb(11, 41, 97);
+}
+section.why main button:hover {
+  background-color: rgb(0, 25, 72) !important;
+}
+@media screen and (max-width: 767px) {
+  section.why main {
+    width: 100%;
+    font-size: 14px;
+    height: auto;
+  }
+}
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  section.why main {
+    height: 30vh;
+  }
+}
+section.why aside {
+  width: 50%;
+}
+@media screen and (max-width: 767px) {
+  section.why aside {
+    width: 100%;
+  }
+}
+section.why aside div {
+  position: relative;
+  width: 100%;
+  height: 50vh;
+}
+@media screen and (max-width: 767px) {
+  section.why aside div {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  section.why aside div {
+    height: 30vh;
+  }
+}
+section.why aside div img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+section.about {
+  padding-top: 3rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  padding-bottom: 3rem;
+  height: 100vh;
+  width: 100%;
+  overflow-y: hidden;
+}
+@media screen and (max-width: 767px) {
+  section.about {
+    height: auto;
+  }
+}
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  section.about {
+    height: auto;
+  }
+}
+section.about h3,
+section.about h5 {
+  text-align: center;
+}
+section.about h5 {
+  letter-spacing: 5px;
+  color: rgb(11, 41, 97);
+  padding-bottom: 2rem;
+}
+section.about div.phil {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 5rem;
+}
+@media screen and (max-width: 767px) {
+  section.about div.phil {
+    width: 100% !important;
+    gap: 2rem;
+    height: auto;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  section.about div.phil {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 2rem;
+    height: auto;
+  }
+}
+section.about div.phil div.left {
+  width: 50%;
+  height: 70vh;
+  position: relative;
+}
+@media screen and (max-width: 767px) {
+  section.about div.phil div.left {
+    width: 100% !important;
+    height: 40vh;
+  }
+}
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  section.about div.phil div.left {
+    width: 100% !important;
+    height: 40vh;
+  }
+}
+section.about div.phil div.left img {
+  position: absolute;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+}
+@media screen and (max-width: 767px) {
+  section.about div.phil div.left img {
+    height: 100%;
+  }
+}
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  section.about div.phil div.left img {
+    height: 100%;
+  }
+}
+section.about div.phil div.right {
+  width: 50%;
+  height: 70vh;
+}
+@media screen and (max-width: 767px) {
+  section.about div.phil div.right {
+    width: 100%;
+    height: auto;
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  section.about div.phil div.right {
+    width: 100%;
+    height: auto;
+    font-size: 1.5rem;
+  }
+}
+
+div.one,
+div.two,
+div.three {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 3rem;
+}
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  div.one,
+div.two,
+div.three {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 0.5rem;
+  }
+}
+div.one h3,
+div.two h3,
+div.three h3 {
+  text-align: left;
+}
+div.one div.text,
+div.two div.text,
+div.three div.text {
+  color: rgb(11, 41, 97);
+}
+
+section.top {
+  width: 100%;
+  height: 100vh;
+  background-color: green;
+  background-image: url(/img/map3.jpg);
+  background-size: cover;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  position: relative;
+  overflow: hidden;
+}
+@media screen and (max-width: 767px) {
+  section.top {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    background-color: blueviolet;
+    height: 200vh;
+  }
+}
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  section.top {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    background-color: rgb(153, 226, 43);
+  }
+}
+section.top::before {
+  content: "";
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(253, 255, 255, 0.769);
+  z-index: 1;
+}
+@media screen and (max-width: 767px) {
+  section.top::before {
+    height: 175vh;
+  }
+}
+section.top div.toptext {
+  width: 100%;
+  top: 0;
+  padding-top: 3rem;
+  position: relative;
+  z-index: 99;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+@media screen and (max-width: 767px) {
+  section.top div.dest {
+    height: 150vh;
+  }
+}
+section.top div.dest div.cards {
+  position: relative;
+  z-index: 99;
+  gap: 1.5rem;
+}
+section.top div.dest .card-body {
+  padding: 0;
+}
+section.top .butt {
+  position: absolute;
+  z-index: 99;
+  bottom: 0;
+  left: 15%;
+  right: 15%;
+}
+
+section.weekend {
+  width: 100%;
+  height: 100vh;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 3rem;
+  padding-top: 2rem;
+}
+@media screen and (max-width: 767px) {
+  section.weekend {
+    height: auto;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  section.weekend {
+    height: auto;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+section.weekend main {
+  width: 50%;
+  height: 85vh;
+  background-color: rgba(245, 245, 245, 0.541);
+}
+@media screen and (max-width: 767px) {
+  section.weekend main {
+    width: 100%;
+    height: auto;
+  }
+}
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  section.weekend main {
+    width: 100%;
+    height: auto;
+  }
+}
+section.weekend main h3 {
+  width: 20%;
+  height: 10vh;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: RGBA(13, 110, 253, var(--bs-bg-opacity, 1));
+  color: whitesmoke;
+  position: absolute;
+  top: 0;
+  left: 35%;
+  border-radius: 35px;
+  -webkit-box-shadow: 2px 2px solid rgba(211, 211, 211, 0.808);
+          box-shadow: 2px 2px solid rgba(211, 211, 211, 0.808);
+}
+@media screen and (max-width: 767px) {
+  section.weekend main h3 {
+    width: 44%;
+    height: 7vh;
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  section.weekend main h3 {
+    width: 30%;
+    height: 4vh;
+  }
+}
+section.weekend main h3 i {
+  color: whitesmoke;
+}
+@media screen and (max-width: 767px) {
+  section.weekend main h3 i {
+    font-size: 30px;
+  }
+}
+section.weekend main h5.blue {
+  color: blue;
+  padding-bottom: 2rem;
+  padding-top: 5rem;
+}
+section.weekend main div.num {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding-top: 3rem;
+  gap: 3rem;
+}
+@media screen and (max-width: 767px) {
+  section.weekend main div.num {
+    gap: 1.5rem;
+  }
+}
+section.weekend main div.num h1 {
+  color: blue;
+}
+@media screen and (max-width: 767px) {
+  section.weekend main div.num h1 {
+    font-size: 22px;
+  }
+}
+section.weekend aside div.kayak {
+  width: 85vh;
+  height: 85vh;
+  position: relative;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@media screen and (max-width: 767px) {
+  section.weekend aside div.kayak {
+    width: 45vh;
+    height: 45vh;
+  }
+}
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  section.weekend aside div.kayak {
+    width: 45vh;
+    height: 45vh;
+  }
+}
+section.weekend aside div.kayak img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  right: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+section.partners {
+  padding-left: 3rem;
+  padding-right: 3rem;
+  height: auto;
+  margin-bottom: 3rem;
+}
+@media screen and (max-width: 767px) {
+  section.partners {
+    height: auto;
+  }
+}
+section.partners div.tog {
+  padding-bottom: 2rem;
+  background-color: white;
+}
+section.partners div.tog h3 {
+  text-align: center;
+  padding-top: 1rem;
+  font-weight: 600;
+  font-size: 25px;
+}
+section.partners div.tog h5 {
+  color: rgb(11, 41, 97);
+  text-align: center;
+  letter-spacing: 1.5rem;
+  font-weight: 600;
+  font-size: 20px;
+}
+section.partners div.tog div.partlogo {
+  width: 100%;
+  height: 20vh;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+  grid-template-columns: repeat(4, 1fr);
+}
+@media screen and (max-width: 767px) {
+  section.partners div.tog div.partlogo {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+    padding-left: 0;
+  }
+}
+section.partners div.tog div.partlogo div {
+  width: 80%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+}
+@media screen and (max-width: 767px) {
+  section.partners div.tog div.partlogo div {
+    width: 100%;
+  }
+}
+section.partners div.tog div.partlogo div img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+section.partners div.tog #carouselExampleFade {
+  height: auto;
+  width: 100%;
+}
+section.partners div.tog #carouselExampleFade div.carousel-inner {
+  width: 100%;
+  height: 30vh;
+  padding-left: 2rem !important;
+  padding-right: 2rem !important;
+}
+section.partners div.tog #carouselExampleFade div.carousel-inner div.carousel-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  height: 30vh;
+  position: relative;
+  padding-right: 2rem !important;
+}
+section.partners div.tog #carouselExampleFade div.carousel-inner div.carousel-item img {
+  width: 40vh !important;
+  height: 30vh !important;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+section.partners div.tog #carouselExampleFade button {
+  font-size: 15px;
+  height: 30px !important;
+  width: 30px;
+  background-color: rgb(11, 41, 97) !important;
+  margin-top: 3.5rem;
+}
+
+section.years {
+  padding-left: 3rem;
+  padding-right: 3rem;
+  background-color: rgb(11, 41, 97);
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 40vh;
+}
+section.years div.smiley {
+  width: 30vh;
+  height: 40vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+section.years div.smiley i {
+  font-size: 25px;
+}
+section.years div.smiley h3 {
+  font-weight: 600;
+  font-size: 25px;
+}
+section.years div.smiley p {
+  font-size: 20px;
+  text-align: center;
+}
+
+section.stay {
+  height: 80vh;
+  width: 100%;
+  margin-bottom: 3rem;
+}
+section.stay div.stage div.coral {
+  width: 100%;
+  height: 80vh;
+  position: relative;
+  z-index: 1 !important;
+}
+section.stay div.stage div.coral::before {
+  content: "";
+  width: 100%;
+  height: 80vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.459);
+  z-index: 10;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+section.stay div.stage div.coral img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+section.stay div.stage div.lorems {
+  position: absolute;
+  margin-top: -19rem !important;
+  z-index: 99 !important;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 4rem;
+  padding-right: 4rem;
+}
+section.stay div.stage div.lorems h3 {
+  color: white;
+  z-index: 99;
+  font-size: 25px;
+  text-align: center;
+  font-weight: 600;
+  padding-bottom: 2rem;
+}
+section.stay div.stage div.lorems p {
+  color: white;
+  z-index: 99;
+  font-size: 20px;
+  padding-bottom: 2rem;
+  text-align: center;
+}
+section.stay div.stage div.lorems button {
+  background-color: rgb(11, 41, 97) !important;
+}
+section.stay div.stage div.lorems button:hover {
+  background-color: transparent !important;
+  color: white;
+}
+
+section.explore {
+  padding-left: 3rem;
+  padding-right: 3rem;
+  margin-bottom: 4rem;
+  height: auto;
+}
+@media screen and (max-width: 767px) {
+  section.explore {
+    height: auto;
+  }
+}
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  section.explore {
+    height: auto;
+    margin-top: -6rem;
+    margin-bottom: 2rem;
+  }
+}
+section.explore div.togg {
+  background-color: rgb(255, 255, 255);
+}
+section.explore div.togg h3 {
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+  font-weight: 600;
+  text-align: center;
+  font-size: 30px;
+}
+section.explore div.togg div.review {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  position: relative;
+  gap: 2rem;
+}
+@media screen and (max-width: 767px) {
+  section.explore div.togg div.review {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 0.5rem;
+  }
+}
+section.explore div.togg div.review div.say {
+  width: 100%;
+  height: 40%;
+  padding: 1rem;
+}
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  section.explore div.togg div.review div.say {
+    padding: 0.5rem;
+  }
+}
+section.explore div.togg div.review div.say p {
+  text-align: justify;
+  height: 47vh;
+  font-size: 15px;
+  padding: 1rem;
+}
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  section.explore div.togg div.review div.say p {
+    height: 38vh;
+  }
+}
+section.explore div.togg div.review div.say p i {
+  font-size: 20px;
+  color: rgb(11, 41, 97);
+  padding-right: 0.5rem;
+}
+section.explore div.togg div.review div.say div.plus {
+  background-color: whitesmoke;
+  width: 100%;
+  height: 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1rem;
+  position: relative;
+}
+@media screen and (max-width: 767px) {
+  section.explore div.togg div.review div.say div.plus {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 0;
+  }
+}
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  section.explore div.togg div.review div.say div.plus {
+    height: auto;
+    width: auto;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+section.explore div.togg div.review div.say div.plus div.ceo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start !important;
+      -ms-flex-align: start !important;
+          align-items: flex-start !important;
+}
+@media screen and (max-width: 767px) {
+  section.explore div.togg div.review div.say div.plus div.ceo {
+    -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important;
+  }
+}
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  section.explore div.togg div.review div.say div.plus div.ceo {
+    width: 18vh;
+  }
+}
+section.explore div.togg div.review div.say div.plus div.ceo h3 {
+  color: rgb(11, 41, 97);
+  font-size: 20px;
+}
+section.explore div.togg div.review div.say div.plus div.ceo h6 {
+  color: rgb(11, 41, 97);
+  font-size: 15px;
+}
+section.explore div.togg div.review div.say div.plus div.jane {
+  width: 30%;
+  height: 20vh;
+  position: relative;
+  z-index: 99;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+@media screen and (max-width: 767px) {
+  section.explore div.togg div.review div.say div.plus div.jane {
+    width: 30vh;
+  }
+}
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  section.explore div.togg div.review div.say div.plus div.jane {
+    width: 19vh;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+section.explore div.togg div.review div.say div.plus div.jane img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 99;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@media screen and (max-width: 767px) {
+  section.explore div.togg div.review div.say div.plus div.jane img {
+    height: 90%;
+  }
+}
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  section.explore div.togg div.review div.say div.plus div.jane img {
+    height: 21vh;
+    width: 19vh;
+    margin-top: -1rem;
+  }
+}
+
+section.foot {
+  padding-left: 3rem;
+  padding-right: 3rem;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+  width: 100%;
+  height: auto;
+  background-color: rgb(11, 41, 97);
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+@media screen and (max-width: 767px) {
+  section.foot {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  section.foot input {
+    width: 13vh;
+  }
+}
+section.foot a {
+  text-decoration: none;
+  font-size: 15px;
+  color: white;
+}
+section.foot h3 {
+  font-weight: 600;
+  font-size: 20px;
+}
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  section.foot h3 {
+    font-size: 17px;
+    font-weight: 600;
+  }
+}
+section.foot div.nomad {
+  gap: 1rem;
+}
+section.foot div.nomad h5 {
+  padding-bottom: 1rem;
+  font-size: 14px;
+}
+section.foot div.email i {
+  font-size: 20px;
+  color: white;
+  border: 0.1px solid white;
+  padding: 0.15rem;
+}
+
+section.mobile {
+  padding-left: 3rem;
+  padding-right: 3rem;
+  margin-top: -1rem;
+  width: 100%;
+  height: 57vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+@media screen and (max-width: 767px) {
+  section.mobile {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: auto;
+  }
+}
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  section.mobile {
+    gap: 2rem;
+    height: auto;
+    margin-top: 3rem;
+    background-color: white;
+  }
+}
+section.mobile main {
+  width: 40%;
+  height: 53vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: rgb(255, 255, 255);
+}
+@media screen and (max-width: 767px) {
+  section.mobile main {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 70vh;
+  }
+}
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  section.mobile main {
+    width: 40%;
+    height: auto;
+  }
+}
+section.mobile main div.phone {
+  width: 40%;
+  height: 50vh;
+  padding-bottom: 2rem;
+  position: relative;
+}
+@media screen and (max-width: 767px) {
+  section.mobile main div.phone {
+    width: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 65vh;
+    margin-top: 2rem;
+  }
+}
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  section.mobile main div.phone {
+    width: 100%;
+  }
+}
+section.mobile main div.phone img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+section.mobile aside {
+  width: 60%;
+  height: 53vh;
+  position: relative;
+  background-color: rgb(255, 255, 255);
+  padding-bottom: 2rem;
+}
+@media screen and (max-width: 767px) {
+  section.mobile aside {
+    width: 100%;
+    height: auto;
+    padding-bottom: 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+section.mobile aside div.quick {
+  width: 100%;
+  height: 53vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  background-color: rgb(255, 255, 255);
+  padding-right: 2rem;
+  padding-top: 2rem;
+}
+@media screen and (max-width: 767px) {
+  section.mobile aside div.quick {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: auto;
+    padding-top: 0.5rem;
+  }
+}
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  section.mobile aside div.quick {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+section.mobile aside div.quick p.wee {
+  font-size: 18px;
+  padding-bottom: 2rem;
+}
+section.mobile aside div.quick h3 {
+  font-weight: 600;
+  font-size: 22px;
+  text-align: center;
+  padding-bottom: 2rem;
+}
+@media screen and (max-width: 767px) {
+  section.mobile aside div.quick h3 {
+    font-size: 15px;
+  }
+}
+section.mobile aside div.quick div.app {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 2rem;
+  width: 100%;
+}
+@media screen and (max-width: 767px) {
+  section.mobile aside div.quick div.app {
+    gap: 0.5rem;
+    padding-top: 0;
+  }
+}
+section.mobile aside div.quick div.app div.apple {
+  width: 32%;
+  height: 9vh;
+  padding-top: 0.5rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: rgb(11, 41, 97);
+  color: whitesmoke;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 1rem;
+  padding-left: 10px;
+  border-radius: 12px;
+}
+@media screen and (max-width: 767px) {
+  section.mobile aside div.quick div.app div.apple {
+    width: 42%;
+    height: 7vh;
+    gap: 0rem;
+    padding-top: 0.5rem;
+  }
+}
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  section.mobile aside div.quick div.app div.apple {
+    width: 55%;
+    gap: 0.5rem;
+    height: 7vh;
+  }
+}
+section.mobile aside div.quick div.app div.apple p {
+  font-size: 15px;
+}
+@media screen and (max-width: 767px) {
+  section.mobile aside div.quick div.app div.apple p {
+    font-size: 12px;
+  }
+}
+section.mobile aside div.quick div.app div.apple i {
+  font-size: 35px;
+}
+@media screen and (max-width: 767px) {
+  section.mobile aside div.quick div.app div.apple i {
+    font-size: 20px;
+    margin-top: -1.5rem;
+  }
+}
+section.mobile aside div.quick div.app div.apple div.appstore span {
+  font-weight: 600;
+}
+section.mobile aside div.quick div.app div.android {
+  width: 29%;
+  height: 9vh;
+  background-color: rgb(0, 0, 0);
+  color: whitesmoke;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding-left: 10px;
+  border-radius: 12px;
+}
+@media screen and (max-width: 767px) {
+  section.mobile aside div.quick div.app div.android {
+    width: 42%;
+    height: 7vh;
+  }
+}
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  section.mobile aside div.quick div.app div.android {
+    width: 55%;
+    gap: 0.5rem;
+    height: 7vh;
+  }
+}
+section.mobile aside div.quick div.app div.android p {
+  font-size: 15px;
+}
+@media screen and (max-width: 767px) {
+  section.mobile aside div.quick div.app div.android p {
+    font-size: 12px;
+  }
+}
+section.mobile aside div.quick div.app div.android div.playstore {
+  width: 20%;
+  height: 100%;
+  position: relative;
+}
+@media screen and (max-width: 767px) {
+  section.mobile aside div.quick div.app div.android div.playstore {
+    width: 15%;
+    height: 50%;
+  }
+}
+section.mobile aside div.quick div.app div.android div.playstore img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
